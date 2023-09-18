@@ -1,5 +1,5 @@
 {
-  "name": "tester",
+  "name": "app_example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,13 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@types/react-router-dom": "^5.3.3",
+    "react-router-dom": "^6.16.0",
     "vapor-design-system": "link:.."
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-transition-group": "^4.4.6",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
