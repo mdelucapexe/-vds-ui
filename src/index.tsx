@@ -9,7 +9,7 @@ export const Button = (props: Test) => {
 
     return (
         <button onClick={props.onClick}>
-            {props.name}
+            aaasss {props.name}
         </button>
     );
 }
