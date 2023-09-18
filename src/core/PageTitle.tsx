@@ -3,12 +3,10 @@ import { styled } from '@mui/styles';
 import * as React from 'react';
 import { BiArrowBack } from 'react-icons/bi';
 
-type Content = any;
-
 export type PageTitleProps = {
     title: string;
     textAlign?: 'center' | 'left' | 'right';
-    content?: Content;
+    content?: any;
     historyBackEvent?: React.MouseEventHandler<HTMLElement>;
     actions?: any;
 }
@@ -16,7 +14,6 @@ export type PageTitleProps = {
 const StyledPageTitle = styled('div')({
     borderBottom: '2px solid #0090D1',
     display: 'flex',
-    marginBottom: '24px'
 });
 
 const StyledTitleContainer = styled('div')(() => ({
@@ -64,7 +61,7 @@ const StyledTitleContainer = styled('div')(() => ({
     }
 }));
 
-export const PageTitle: React.VFC<PageTitleProps> = (props: PageTitleProps) => {
+export const PageTitle: React.FC<PageTitleProps> = (props: PageTitleProps) => {
 
     const { title, actions, content, historyBackEvent, textAlign = 'center' } = props;
 

@@ -14,7 +14,7 @@ import Toolbar from '@mui/material/Toolbar';
 import { AiOutlineMenu } from 'react-icons/ai';
 import Typography from '@mui/material/Typography';
 import { Container, styled, useMediaQuery, useTheme } from '@mui/material';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -42,6 +42,7 @@ export const ApplicationLayout = (props: Props) => {
 
   const { window } = props;
   const navigate = useNavigate();
+  const location = useLocation();
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up(500));
 
@@ -56,8 +57,8 @@ export const ApplicationLayout = (props: Props) => {
       <StyledListItem />
       <Divider />
       <List disablePadding>
-        {['Home', 'AppBar', 'PageTitle'].map((text) => (
-          <StyledListItem key={text} disablePadding>
+        {['Home', 'PageTitle'].map((text) => (
+          <StyledListItem key={text} disablePadding sx={{ backgroundColor: (text === 'Home' ? (location.pathname.toUpperCase().includes(text.toUpperCase()) || location.pathname === '/') : location.pathname.toUpperCase().includes(text.toUpperCase())) ? 'var(--bg-color-secondary)' : 'initial' }}>
             <ListItemButton onClick={() => { navigate(text); }}>
               <StyledListItemText primary={text} />
             </ListItemButton>

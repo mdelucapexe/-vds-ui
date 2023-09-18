@@ -2,7 +2,7 @@ import { Box, Typography, styled } from "@mui/material"
 import { PageTitle } from 'vapor-design-system';
 import { ExContainer } from "../components";
 
-const StyledTitle = styled('span')(() => ({
+export const StyledTitle = styled('span')(() => ({
     fontFamily: 'Cairo',
     color: 'var(--colors-blocks-content-text-styleguide-title, #212121)',
     marginBottom: '16px',
@@ -11,9 +11,9 @@ const StyledTitle = styled('span')(() => ({
     lineHeight: '3rem'
 }));
 
-const StyledSectionDescription = styled('span')(() => ({
+export const StyledSectionDescription = styled('span')(() => ({
     fontSize: "1rem",
-    lineHeight: "1.5rem",
+    lineHeight: "3rem",
     fontWeight: 700,
     display: "block",
     overflow: "hidden",
@@ -39,13 +39,26 @@ export const DocPageTitlePage = () => {
             <StyledSectionDescription>
                 Default View
             </StyledSectionDescription>
-            <ExContainer>
+            <ExContainer
+                exCase={
+`<PageTitle 
+    title="Lorem ipsum"
+/>`
+                }
+            >
                 <PageTitle title="Lorem ipsum" />
             </ExContainer>
             <StyledSectionDescription>
                 With description
             </StyledSectionDescription>
-            <ExContainer>
+            <ExContainer
+                exCase={
+`<PageTitle 
+    title="Lorem ipsum"
+    content="lorem ipsum dolor sit amlet"
+/>`
+                }
+            >
                 <PageTitle title="Lorem ipsum" content="lorem ipsum dolor sit amlet" />
             </ExContainer>
         </Box>

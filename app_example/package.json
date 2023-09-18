@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/prismjs": "^1.26.0",
     "@types/react-router-dom": "^5.3.3",
+    "prismjs": "^1.29.0",
     "react-router-dom": "^6.16.0",
     "vapor-design-system": "link:.."
   },

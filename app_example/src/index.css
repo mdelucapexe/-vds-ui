@@ -7,6 +7,7 @@
 
   --color-primary: var(--palette-YankeesBlue);
   --bg-color-primary: var(--palette-YankeesBlue);
+  --bg-color-secondary: var(--palette-RichElectricBlue);
 
   
   --colors-blocks-content-text-styleguide-title: #152935;
@@ -64,4 +65,8 @@ html, body, #root {
   font-family: 'Roboto', 'Cairo Regular', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.npm__react-simple-code-editor__textarea{
+  
 }
