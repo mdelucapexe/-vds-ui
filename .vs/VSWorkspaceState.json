@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\core"
   ],
+  "SelectedNode": "\\src\\core\\PageTitle.tsx",
   "PreviewInSolutionExplorer": false
 }
