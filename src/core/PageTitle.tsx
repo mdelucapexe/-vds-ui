@@ -17,7 +17,7 @@ const StyledPageTitle = styled('div')({
 });
 
 const StyledTitleContainer = styled('div')(() => ({
-    'flex-grow': 1,
+    flexGrow: 1,
     display: 'flex',
     flexDirection: 'column',
     padding: '9px 13px',
