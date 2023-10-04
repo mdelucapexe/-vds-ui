@@ -1,4 +1,4 @@
-import { Box, Typography, styled } from "@mui/material"
+import { Box, styled } from "@mui/material"
 import { PageTitle } from 'vapor-design-system';
 import { ExContainer } from "../components";
 

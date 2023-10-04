@@ -1,7 +1,5 @@
-import { Box, Button, Divider, Icon, IconButton, Stack } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
-import { BsCodeSlash } from 'react-icons/bs';
-import { VscOpenPreview } from 'react-icons/vsc';
 import Editor from "../Editor/Editor";
 import { highlight, languages } from 'prismjs/components/prism-core';
 import 'prismjs/components/prism-clike';

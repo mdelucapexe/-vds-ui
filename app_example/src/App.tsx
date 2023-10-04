@@ -1,4 +1,3 @@
-import './App.css'
 import { ApplicationLayout } from './components';
 import {
   createBrowserRouter,

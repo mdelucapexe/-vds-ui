@@ -8,11 +8,9 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Toolbar from '@mui/material/Toolbar';
 import { AiOutlineMenu } from 'react-icons/ai';
-import Typography from '@mui/material/Typography';
 import { Container, styled, useMediaQuery, useTheme } from '@mui/material';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
